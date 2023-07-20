@@ -960,7 +960,7 @@ async def shortlink(bot, message):
         return await message.reply(f"You are anonymous admin. Turn off anonymous admin and try again this command")
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
-        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\n<u>Follow These Steps to Connect Shortener:</u>\n\n1. Add Me in Your Group with Full Admin Rights\n\n2. After Adding in Grp, Set your Shortener\n\nSend this command in your group\n\n—> /shortlink ""{your_shortener_website_name} {your_shortener_api}\n\n#Sample:-\n/shortlink onepagelink.in bb169dcd813ab28f6e8cbc12ee30725a149d0163\n\nThat's it!!! Enjoy Earning Money 💲\n\n[[[ You Can Use This Also or Any other ]]]\n\nIf you have any Doubts, Feel Free to Ask me - @Harsh_Kumar0001\n\n(If you don't understand, message me Here - @Harsh_Kumar0001)</b>")
+        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\n<u>Follow These Steps to Connect Shortener:</u>\n\n1. Add Me in Your Group with Full Admin Rights\n\n2. After Adding in Grp, Set your Shortener\n\nSend this command in your group\n\n⭕️ /shortlink ""(your_shortener_website_name) (your_shortener_api)\n\nSample One :-\n\n/shortlink onepagelink.in bb169dcd813ab28f6e8cbc12ee30725a149d0163\n\nThat's it!!! Enjoy Earning Money 💲\n\n You Can Use This Also or Any other\n\nIf you have any Doubts, Feel Free to Ask me - @Harsh_Kumar0001\n\n(If you don't understand, message me Here - @Harsh_Kumar0001)</b>")
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         grpid = message.chat.id
         title = message.chat.title
