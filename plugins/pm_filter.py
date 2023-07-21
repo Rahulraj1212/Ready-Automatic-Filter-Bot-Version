@@ -153,9 +153,6 @@ async def next_page(bot, query):
             InlineKeyboardButton("Start Bot", url=f"https://telegram.me/{temp.U_NAME}"),
             InlineKeyboardButton('⚜️ Tips', 'select')
         ])
-btn.insert(0, [
-            InlineKeyboardButton("⛔️ Join Our Update Channel ⛔️", url="https://t.me/Get_Update_Official")
-])
 
     else:
         btn = []
@@ -408,11 +405,6 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 ]
             )
 
-btn.insert(0, 
-                [
-                    InlineKeyboardButton("⛔️ Join Our Update Channel ⛔️", url="https://t.me/Get_Update_Official")
-                ]
-            )
 
 
         else:
@@ -422,12 +414,7 @@ btn.insert(0,
                     InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                     InlineKeyboardButton("Sᴇᴀsᴏɴs", callback_data=f"seasons#{key}")
                 ]
-            )
-btn.insert(0, 
-                [
-                    InlineKeyboardButton("⛔️ Join Our Update Channel ⛔️", url="https://t.me/Get_Update_Official")
-                ]
-            )
+                      )
 
                 
     except KeyError:
@@ -438,13 +425,7 @@ btn.insert(0,
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("Sᴇᴀsᴏɴs", callback_data=f"seasons#{key}")
             ]
-        )
-btn.insert(0, 
-                [
-                    InlineKeyboardButton("⛔️ Join Our Update Channel ⛔️", url="https://t.me/Get_Update_Official")
-                ]
-            )
-
+                  )
 
     # btn.insert(0, [
     #     InlineKeyboardButton("⚡ How To Download ⚡", url=await get_tutorial(query.message.chat.id))
