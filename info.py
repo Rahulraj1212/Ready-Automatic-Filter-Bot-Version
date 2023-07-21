@@ -13,21 +13,21 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '12774158'))
+API_HASH = environ.get('API_HASH', 'd7b49cf2022c84fdb4fafd71fa229be6')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6167379161:AAHrdljQLQxI2opo-5o_cR9diyTNeJICn9M")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/6667bc236586d88faf06f.jpg https://graph.org/file/fc429e67566e3ace4df79.jpg https://graph.org/file/3d87ed49e90ec5c4c103a.jpg https://graph.org/file/8b5f970d809fa8019d87e.jpg https://graph.org/file/ef2b1038aa2b5e18ea405.jpg https://graph.org/file/abea37ce9bb0e12ade13b.jpg')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/175687ae811b17e6c6906.jpg https://te.legra.ph/file/c73d8488dadd6cfc76ade.jpg https://te.legra.ph/file/8d6976d3e02a859e85fe4.jpg https://te.legra.ph/file/7f4bf374d44c766adf2ec.jpg https://te.legra.ph/file/fc5abda0b63363e31d14b.jpg https://te.legra.ph/file/842ed8d42d714eedd52f1.jpg https://te.legra.ph/file/6ac1f7c4228c7d2708050.jpg https://te.legra.ph/file/a060eba2501cf0ca97021.jpg https://te.legra.ph/file/3708e760c141fc088ef80.jpg https://te.legra.ph/file/00176fad0f5f7f7a87c3e.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/6f55d902f9bf2d0afd4bb.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2052792772').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -43,8 +43,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mbg766203:mbg766203@cluster0.jksyr8r.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "AUTO-FILT")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
@@ -53,7 +53,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL', 'onepagelink.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '1f1da5c9df9a58058w672acw8d8134e203b03426a1')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'onepagelink.in')
 SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '1f1da5c9df9a58058672a3c8ed8134e203b03426a1')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
@@ -63,7 +63,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Get_Update_Official')
 TUTORIAL = environ.get('TUTORIAL', 'How to Download ########')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001375332384'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Get_Update_Official')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
