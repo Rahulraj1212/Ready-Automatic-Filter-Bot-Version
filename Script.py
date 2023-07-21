@@ -241,4 +241,4 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     LOGO = """
 
-OK Tested
+OK Tested"""
